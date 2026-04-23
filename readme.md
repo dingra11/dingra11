@@ -12,8 +12,8 @@ I'm an 🔭 astrophysics student 🔭 at the 🎓 Guru Nanak Dev Univeristy 🎓
   - Python code packaging for scientific software: Notes on how to develop a Python package with documentation, tests, etc. (materials for a course based on this available here)
 
 - 📫 Contact:
-  - Email: bovy@astro.utoronto.ca
-  - Website: http://astro.utoronto.ca/~bovy
-  - Group website: http://astro.utoronto.ca/~bovy/group/index.html
-  - 🐦 Find me on twitter: @jobovy
-  - 🐙 and on GitHub 😉: jobovy
+  - Email: astrodingra@gmail.com
+  - Website: http://www.astrodingra.in
+  - 🐦 Find me on LinkedIN: [@astrodingra](https://www.linkedin.com/in/astrodingra/)
+  - 🐙 and on GitHub 😉: [dingra11](https://www.github.com/dingra11) (lost the old account - jsdingra11)
+  -  and on YouTube: [@astrodingra](https://www.youtube.com/@astrodingra)
