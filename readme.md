@@ -14,7 +14,7 @@ I'm an astrophysics student at the Guru Nanak Dev Univeristy working on understa
 - my DNA:
   <p>
   <img src="https://cdn.simpleicons.org/python/3776AB" height="20"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height="20"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" height="20" title="Assembly"/>
   <img src="https://cdn.simpleicons.org/fortran/734F96" height="20"/>
   <img src="https://cdn.simpleicons.org/r/276DC3" height="20"/>
   <img src="https://cdn.simpleicons.org/cplusplus/00599C" height="20"/>
