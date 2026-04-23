@@ -1,10 +1,10 @@
 Hi there, I'm [Jashanpreet Singh Dingra](https://www.astrodingra.in) 👋
 
-I'm an astrophysics student at the Guru Nanak Dev Univeristy working on understanding AGN feeback on galaxy formation at high redshift and on making astrophysics more accessible, robust, and reproducible by developing open-source, well-documented, and well-tested software packages for use in astrophysics and beyond.
+I'm an astrophysics student at the Guru Nanak Dev University working on understanding AGN feeback on galaxy formation at high redshift and on making astrophysics more accessible, robust, and reproducible by developing open-source, well-documented, and well-tested software packages for use in astrophysics and beyond.
 
 - 🔭 Some astronomy and data analysis Python packages that I develop:
   - [galamo](https://www.galamo.org): an open source python package for galaxy analysis <img src="https://www.galamo.org/images/galamo_main.svg" height="50" align="right"/>
-  - vdisp: A one-dimensional gravitational N-body code
+  - vdisp: A Python pipeline for estimating velocity desperison of AGN host galaxy developed in collaboration with IUCAA
   - raga: a Python package for galactic chemical evolution (also available in javascript form!)
 - 👨‍🏫 Some online courses that I am working on:
   - [Computational Astrophysics / AGN Analysis](https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ): An interactive, online graduate lecture series on the astrophysics of galaxies
