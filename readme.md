@@ -10,15 +10,10 @@ I'm an 🔭 astrophysics student 🔭 at the 🎓 Guru Nanak Dev Univeristy 🎓
 - 👨‍🏫 Some online courses that I am working on:
   - [Computational Astrophysics / AGN Analysis](https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ): An interactive, online graduate lecture series on the astrophysics of galaxies
   - Python code packaging for scientific software: Notes on how to develop a Python package with documentation, tests, etc. (materials for a course based on this available here)
-    
-## 📫 Contact:
 
-- 📧 Email: astrodingra@gmail.com  
-- 🌐 Website: [astrodingra.in](http://www.astrodingra.in)
-
-- <img src="https://cdn.simpleicons.org/linkedin/0A66C2" height="16"/> LinkedIn: [@astrodingra](https://www.linkedin.com/in/astrodingra/)
-
-- <img src="https://cdn.simpleicons.org/github/181717" height="16"/> GitHub: [dingra11](https://www.github.com/dingra11)  
-  *(lost the old account - jsdingra11)*
-
-- <img src="https://cdn.simpleicons.org/youtube/FF0000" height="16"/> YouTube: [@astrodingra](https://www.youtube.com/@astrodingra)
+- 📫 Contact:
+  - Email: astrodingra@gmail.com
+  - Website: [astrodingra.in](http://www.astrodingra.in)
+  - <img src="https://cdn.simpleicons.org/linkedin/0A66C2" height="16"/> Find me on LinkedIN: [@astrodingra](https://www.linkedin.com/in/astrodingra/)
+  - <img src="https://cdn.simpleicons.org/github/181717" height="16"/> and on GitHub 😉: [dingra11](https://www.github.com/dingra11) (lost the old account - jsdingra11)
+  - <img src="https://cdn.simpleicons.org/youtube/FF0000" height="16"/> and on YouTube: [@astrodingra](https://www.youtube.com/@astrodingra)
