@@ -19,7 +19,7 @@ I'm an astrophysics student at the Guru Nanak Dev Univeristy working on understa
   <img src="https://cdn.simpleicons.org/r/276DC3" height="20"/>
   <img src="https://cdn.simpleicons.org/cplusplus/00599C" height="20"/>
   <img src="https://cdn.simpleicons.org/go/00ADD8" height="20"/>
-  <img src="https://cdn.simpleicons.org/gnuassembler/A42E2B" height="20"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" height="20" title="Assembly"/>
   <img src="https://cdn.simpleicons.org/html5/E34F26" height="20"/>
   <img src="https://cdn.simpleicons.org/css/1572B6" height="20"/>
   <img src="https://cdn.simpleicons.org/javascript/F7DF1E" height="20"/>
