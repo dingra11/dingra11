@@ -8,9 +8,7 @@ I'm an 🔭 astrophysics student 🔭 at the 🎓 Guru Nanak Dev Univeristy 🎓
   - raga: a Python package for galactic chemical evolution (also available in javascript form!
 
 - 👨‍🏫 Some online courses that I am working on:
-  - <a href="https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ" style="text-decoration:none; color:inherit;">
-Computational Astrophysics / AGN Analysis
-</a>: An interactive, online graduate lecture series on the astrophysics of galaxies
+  - [Computational Astrophysics / AGN Analysis](https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ): An interactive, online graduate lecture series on the astrophysics of galaxies
   - Python code packaging for scientific software: Notes on how to develop a Python package with documentation, tests, etc. (materials for a course based on this available here)
 
 - 📫 Contact:
