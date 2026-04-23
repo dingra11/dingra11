@@ -1,61 +1,23 @@
-<h1 align="center">Hi 👋, I'm Jashanpreet Singh</h1>
-<h3 align="center">Building tools, research & software 🚀</h3>
+Hi there, I'm Jashanpreet Singh Dingra 👋
 
-<p align="center">
-  <img src="https://your-logo-url.com" alt="logo" width="120"/>
-</p>
+I'm an 🔭 astrophysicist 🔭 at the 🎓 University of Toronto 🎓 working on understanding 🌌 galaxy formation 🌌 and on making astrophysics more accessible, robust, and reproducible by developing open-source, well-documented, and well-tested software packages for use in astrophysics and beyond.
 
----
+- 🔭 Some astronomy and data analysis Python packages that I develop:
+  - galpy: a Python library for galactic dynamics
+  - wendy: A one-dimensional gravitational N-body code
+  - kimmy: a Python package for galactic chemical evolution (also available in javascript form!)
+  - apogee: Tools for dealing with APOGEE data
+  - gaia_tools: Tools for working with the @ESAGaia data and related data sets
+  - mwdust: Tools for dealing with dust extinction in the Milky Way
+  - extreme deconvolution: Density estimation using Gaussian mixtures in the presence of noisy, heterogeneous and incomplete data
 
-## 🧠 About Me
-- 🧪 Physics + Astronomy Researcher  
-- 💻 Developer of **Galamo**  
-- 🤖 Interested in AI, ML & Astrophysics  
-- 🌌 Working on AGN + ML projects  
+- 👨‍🏫 Some online courses that I am working on:
+  - Dynamics and Astrophysics of Galaxies: An interactive, online graduate textbook on the astrophysics of galaxies
+  - Python code packaging for scientific software: Notes on how to develop a Python package with documentation, tests, etc. (materials for a course based on this available here)
 
----
-
-## 🚀 Tech Stack
-
-### Languages
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=python,go,cpp,r,js,html,css" />
-</p>
-
-### Frameworks & Tools
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,react,mongodb,docker,firebase" />
-</p>
-
-### Low-Level / Systems
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=c,cpp" />
-  <img src="https://img.shields.io/badge/Assembly-%23000000.svg?style=for-the-badge&logo=gnu&logoColor=white"/>
-</p>
-
----
-
-## 🛠️ Projects
-- 🔭 **Galamo** – Python package for astronomy  
-- 🧠 ML models for AGN research  
-- 🌐 Full-stack MERN applications  
-
----
-
-## 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight"/>
-</p>
-
----
-
-## 🌍 Connect With Me
-<p align="center">
-  <a href="https://your-website.com">Website</a> •
-  <a href="mailto:astrodingra@gmail.com">Email</a> •
-  <a href="https://github.com/YOUR_USERNAME">GitHub</a>
-</p>
+- 📫 Contact:
+  - Email: bovy@astro.utoronto.ca
+  - Website: http://astro.utoronto.ca/~bovy
+  - Group website: http://astro.utoronto.ca/~bovy/group/index.html
+  - 🐦 Find me on twitter: @jobovy
+  - 🐙 and on GitHub 😉: jobovy
