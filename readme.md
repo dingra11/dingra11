@@ -5,7 +5,8 @@ I'm an astrophysics student at the Guru Nanak Dev University working on understa
 - 🔭 Some astronomy and data analysis Python packages that I develop:
   - [galamo](https://www.galamo.org): an open source python package for galaxy analysis <img src="https://www.galamo.org/images/galamo_main.svg" height="50" align="right"/>
   - vdisp: A Python pipeline for estimating velocity desperison of AGN host galaxy developed in collaboration with IUCAA
-  - raga: a Python package for galactic chemical evolution (also available in javascript form!)
+  
+    
 - 👨‍🏫 Some online courses that I am working on:
   - [Computational Astrophysics / AGN Analysis](https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ): An interactive, online graduate lecture series on the astrophysics of galaxies
   - Python code packaging for scientific software: Notes on how to develop a Python package with documentation, tests, etc. (materials for a course based on this available here)
