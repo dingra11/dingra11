@@ -1,30 +1,61 @@
-# hi, i’m jashanpreet singh dingra
+<h1 align="center">Hi 👋, I'm Jashanpreet Singh</h1>
+<h3 align="center">Building tools, research & software 🚀</h3>
 
-i’m 18. i build tools, write code, look at the sky a lot, and sometimes do research that ends up in places i didn’t expect.
-
-i care about clean code, good people, open source, and galaxies.
-
----
-
-### what i'm proud of
-
-**galamo** – a python package for galaxy classification and black hole mass estimation  
-→ [galamo.org](https://www.galamo.org)  
-→ [github.com/galamo-org/galamo](https://github.com/galamo-org/galamo)
-
-**rocket flight computer** – altitude, gps, sensors, baro – solo hardware-software project  
-→ [instagram post](https://www.instagram.com/p/CxZi1EwRvNS/)
-
-**astronomy photographer of the year** – shortlisted for my image of the pleiades  
-→ [featured in forbes](https://www.forbes.com/sites/jamiecartereurope/2021/07/01/in-photos-dolphin-head-martian-sunset-and-angry-sun-star-in-astronomy-photographer-of-the-year-competition-entries/)
-
-**dingrastro** – a chill global astronomy club with people from kosovo to punjab  
-→ [dingrastroclub.github.io](https://dingrastroclub.github.io)
-
-**my corner of the internet**  
-→ [dingra.galamo.org](https://dingra.galamo.org)
+<p align="center">
+  <img src="https://your-logo-url.com" alt="logo" width="120"/>
+</p>
 
 ---
 
-talk to me  
-**email** → astrodingra@gmail.com  
+## 🧠 About Me
+- 🧪 Physics + Astronomy Researcher  
+- 💻 Developer of **Galamo**  
+- 🤖 Interested in AI, ML & Astrophysics  
+- 🌌 Working on AGN + ML projects  
+
+---
+
+## 🚀 Tech Stack
+
+### Languages
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,go,cpp,r,js,html,css" />
+</p>
+
+### Frameworks & Tools
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,react,mongodb,docker,firebase" />
+</p>
+
+### Low-Level / Systems
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=c,cpp" />
+  <img src="https://img.shields.io/badge/Assembly-%23000000.svg?style=for-the-badge&logo=gnu&logoColor=white"/>
+</p>
+
+---
+
+## 🛠️ Projects
+- 🔭 **Galamo** – Python package for astronomy  
+- 🧠 ML models for AGN research  
+- 🌐 Full-stack MERN applications  
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight"/>
+</p>
+
+---
+
+## 🌍 Connect With Me
+<p align="center">
+  <a href="https://your-website.com">Website</a> •
+  <a href="mailto:astrodingra@gmail.com">Email</a> •
+  <a href="https://github.com/YOUR_USERNAME">GitHub</a>
+</p>
