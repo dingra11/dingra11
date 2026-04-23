@@ -1,4 +1,4 @@
-Hi there, I'm Jashanpreet Singh Dingra 👋
+Hi there, I'm [Jashanpreet Singh Dingra](https://www.astrodingra.in) 👋
 
 I'm an 🔭 astrophysicist 🔭 at the 🎓 University of Toronto 🎓 working on understanding 🌌 galaxy formation 🌌 and on making astrophysics more accessible, robust, and reproducible by developing open-source, well-documented, and well-tested software packages for use in astrophysics and beyond.
 
