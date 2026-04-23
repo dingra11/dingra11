@@ -1,6 +1,6 @@
 Hi there, I'm [Jashanpreet Singh Dingra](https://www.astrodingra.in) 👋
 
-I'm an 🔭 astrophysics student 🔭 at the 🎓 Guru Nanak Dev Univeristy 🎓 working on understanding 🌌 AGN feeback on galaxy formation at high redshift 🌌 and on making astrophysics more accessible, robust, and reproducible by developing open-source, well-documented, and well-tested software packages for use in astrophysics and beyond.
+I'm an astrophysics student at the Guru Nanak Dev Univeristy working on understanding AGN feeback on galaxy formation at high redshift and on making astrophysics more accessible, robust, and reproducible by developing open-source, well-documented, and well-tested software packages for use in astrophysics and beyond.
 
 - 🔭 Some astronomy and data analysis Python packages that I develop:
   - galamo: a Python library for galactic dynamics
@@ -10,10 +10,28 @@ I'm an 🔭 astrophysics student 🔭 at the 🎓 Guru Nanak Dev Univeristy 🎓
 - 👨‍🏫 Some online courses that I am working on:
   - [Computational Astrophysics / AGN Analysis](https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ): An interactive, online graduate lecture series on the astrophysics of galaxies
   - Python code packaging for scientific software: Notes on how to develop a Python package with documentation, tests, etc. (materials for a course based on this available here)
+ 
+- my DNA:
+  <p>
+  <img src="https://cdn.simpleicons.org/python/3776AB" height="20"/>
+  <img src="https://cdn.simpleicons.org/mathworks/0076A8" height="20"/>
+  <img src="https://cdn.simpleicons.org/fortran/734F96" height="20"/>
+  <img src="https://cdn.simpleicons.org/r/276DC3" height="20"/>
+  <img src="https://cdn.simpleicons.org/cplusplus/00599C" height="20"/>
+  <img src="https://cdn.simpleicons.org/go/00ADD8" height="20"/>
+  <img src="https://cdn.simpleicons.org/gnuassembler/A42E2B" height="20"/>
+  <img src="https://cdn.simpleicons.org/html5/E34F26" height="20"/>
+  <img src="https://cdn.simpleicons.org/css/1572B6" height="20"/>
+  <img src="https://cdn.simpleicons.org/javascript/F7DF1E" height="20"/>
+  <img src="https://cdn.simpleicons.org/nodedotjs/339933" height="20"/>
+  <img src="https://cdn.simpleicons.org/react/61DAFB" height="20"/>
+  <img src="https://cdn.simpleicons.org/docker/2496ED" height="20"/>
+  <img src="https://cdn.simpleicons.org/firebase/FFCA28" height="20"/>
+</p> 
 
-- 📫 Contact:
+-  Contact:
   - Email: astrodingra@gmail.com
   - Website: [astrodingra.in](http://www.astrodingra.in)
   - <img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png" height="16"/> Find me on LinkedIN: [@astrodingra](https://www.linkedin.com/in/astrodingra/)
   - <img src="https://cdn.simpleicons.org/github/181717" height="16"/> and on GitHub 😉: [dingra11](https://www.github.com/dingra11) (lost the old account - jsdingra11)
-  - <img src="https://cdn.simpleicons.org/youtube/FF0000" height="15"/> and on YouTube: [@astrodingra](https://www.youtube.com/@astrodingra)
+  - <img src="https://cdn.simpleicons.org/youtube/FF0000" height="16"/> and on YouTube: [@astrodingra](https://www.youtube.com/@astrodingra)
