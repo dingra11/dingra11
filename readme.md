@@ -16,4 +16,4 @@ I'm an 🔭 astrophysics student 🔭 at the 🎓 Guru Nanak Dev Univeristy 🎓
   - Website: [astrodingra.in](http://www.astrodingra.in)
   - <img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png" height="16"/> Find me on LinkedIN: [@astrodingra](https://www.linkedin.com/in/astrodingra/)
   - <img src="https://cdn.simpleicons.org/github/181717" height="16"/> and on GitHub 😉: [dingra11](https://www.github.com/dingra11) (lost the old account - jsdingra11)
-  - <img src="https://cdn.simpleicons.org/youtube/FF0000" height="16"/> and on YouTube: [@astrodingra](https://www.youtube.com/@astrodingra)
+  - <img src="https://cdn.simpleicons.org/youtube/FF0000" height="15"/> and on YouTube: [@astrodingra](https://www.youtube.com/@astrodingra)
