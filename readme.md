@@ -8,7 +8,7 @@ I'm an astrophysics student at the Guru Nanak Dev University working on understa
   
     
 - 👨‍🏫 Some online courses that I am working on:
-  - [Computational Astrophysics / AGN Analysis](https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ): An interactive, online graduate lecture series on the astrophysics of galaxies
+  - [Computational Astrophysics / AGN Analysis](https://www.youtube.com/playlist?list=PL54Wg1cwz_jMDaLcFnaoOoRAZkrEDU6bJ): An interactive, online graduate lecture series on the astrophysics of galaxies.
   - Python for Astronomy: A comprehensive eBook for processing and analyzing astrophysical data using Python. [Get eBook PDF](https://www.astrodingra.in/body.pdf)
  
 - my DNA:
