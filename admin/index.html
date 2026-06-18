@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd AGN School - Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-800 dark:text-slate-100 font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-indigo-600 dark:bg-indigo-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    <span class="font-bold text-xl text-white tracking-wide">3rd AGN Admin</span>
+                </div>
+                <div class="text-indigo-100 text-sm font-medium">Live Dashboard</div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+        
+        <!-- Dashboard Header & Status -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+                <h1 class="text-2xl font-bold text-slate-900 dark:text-white">Feedback Overview</h1>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Real-time insights from your school community.</p>
+            </div>
+            <div id="connectionStatus" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 text-xs font-semibold">
+                <span class="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+                Connecting to Secure Database...
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Total Responses Card -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-6">
+                <div class="w-14 h-14 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                <div>
+                    <p class="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">Total Responses</p>
+                    <h3 id="totalResponses" class="text-3xl font-bold text-slate-900 dark:text-white">--</h3>
+                </div>
+            </div>
+
+            <!-- Average Rating Card -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-6">
+                <div class="w-14 h-14 rounded-full bg-yellow-100 dark:bg-yellow-900/40 text-yellow-500 flex items-center justify-center shrink-0">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <div>
+                    <p class="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">Average Star Rating</p>
+                    <div class="flex items-baseline gap-2">
+                        <h3 id="avgRating" class="text-3xl font-bold text-slate-900 dark:text-white">--</h3>
+                        <span class="text-slate-400 font-medium">/ 10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback List Section -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden">
+            <div class="px-6 py-5 border-b border-slate-100 dark:border-slate-700">
+                <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Recent Feedback</h3>
+            </div>
+            
+            <!-- Loading Skeleton -->
+            <div id="loadingState" class="p-6 space-y-4">
+                <div class="animate-pulse flex space-x-4">
+                    <div class="flex-1 space-y-4 py-1">
+                        <div class="h-4 bg-slate-200 dark:bg-slate-700 rounded w-3/4"></div>
+                        <div class="space-y-2">
+                            <div class="h-4 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                            <div class="h-4 bg-slate-200 dark:bg-slate-700 rounded w-5/6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="hidden p-12 text-center">
+                <svg class="mx-auto h-12 w-12 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg>
+                <h3 class="mt-2 text-sm font-medium text-slate-900 dark:text-white">No feedback yet</h3>
+                <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Wait for responses to start appearing here.</p>
+            </div>
+
+            <!-- Actual Feedback List -->
+            <div id="feedbackList" class="hidden divide-y divide-slate-100 dark:divide-slate-700/50">
+                <!-- Dynamically populated rows go here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Firebase Logic -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-database.js";
+
+        // --- ENVIRONMENT DETECTION & FIREBASE CONFIG ---
+        const isCanvasEnvironment = typeof __firebase_config !== 'undefined';
+        
+        const configToUse = isCanvasEnvironment 
+            ? JSON.parse(__firebase_config) 
+            : {
+                apiKey: "AIzaSyCut-Qi7scoHnjHyE8UBuN53PHWnMMKqSE",
+                authDomain: "sitee-f6a0c.firebaseapp.com",
+                databaseURL: "https://sitee-f6a0c-default-rtdb.asia-southeast1.firebasedatabase.app",
+                projectId: "sitee-f6a0c",
+                storageBucket: "sitee-f6a0c.firebasestorage.app",
+                messagingSenderId: "284183052545",
+                appId: "1:284183052545:web:ef85ecc7be844cede8db00",
+                measurementId: "G-HZHS31QH07"
+            };
+
+        const app = initializeApp(configToUse);
+        const auth = getAuth(app);
+        
+        let db, rtdb;
+        if (isCanvasEnvironment) {
+            db = getFirestore(app);
+        } else {
+            rtdb = getDatabase(app);
+        }
+
+        // DOM Elements
+        const statusEl = document.getElementById('connectionStatus');
+        const totalEl = document.getElementById('totalResponses');
+        const avgEl = document.getElementById('avgRating');
+        const loadingState = document.getElementById('loadingState');
+        const emptyState = document.getElementById('emptyState');
+        const listEl = document.getElementById('feedbackList');
+
+        function updateStatus(status, type) {
+            if (type === 'success') {
+                statusEl.className = "inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold";
+                statusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-green-500"></span> ${status}`;
+            } else if (type === 'error') {
+                statusEl.className = "inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 text-xs font-semibold";
+                statusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-red-500"></span> ${status}`;
+            }
+        }
+
+        // --- AUTHENTICATION ---
+        const initAuth = async () => {
+            try {
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+            } catch (error) {
+                console.error("Auth Error:", error);
+                updateStatus("Authentication Failed", "error");
+            }
+        };
+
+        // --- DATA FETCHING AND RENDERING ---
+        const renderData = (dataArray) => {
+            loadingState.classList.add('hidden');
+            
+            if (dataArray.length === 0) {
+                emptyState.classList.remove('hidden');
+                listEl.classList.add('hidden');
+                totalEl.textContent = "0";
+                avgEl.textContent = "0.0";
+                return;
+            }
+
+            // Sort newest first in JS memory to avoid complex queries
+            dataArray.sort((a, b) => b.parsedDate - a.parsedDate);
+
+            // Calculate Stats
+            const total = dataArray.length;
+            const sum = dataArray.reduce((acc, curr) => acc + (curr.rating || 0), 0);
+            const avg = (sum / total).toFixed(1);
+
+            totalEl.textContent = total;
+            avgEl.textContent = avg;
+
+            emptyState.classList.add('hidden');
+            listEl.classList.remove('hidden');
+            listEl.innerHTML = ''; // Clear current
+
+            dataArray.forEach(item => {
+                const dateStr = item.parsedDate.toLocaleDateString(undefined, { 
+                    year: 'numeric', month: 'short', day: 'numeric', 
+                    hour: '2-digit', minute:'2-digit' 
+                });
+
+                const ratingBadgeClass = item.rating >= 8 ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' 
+                                      : item.rating >= 5 ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400' 
+                                      : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400';
+
+                const html = `
+                    <div class="p-6 hover:bg-slate-50/50 dark:hover:bg-slate-700/20 transition-colors">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+                            <div class="flex items-center gap-3">
+                                <span class="px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1 ${ratingBadgeClass}">
+                                    ${item.rating} / 10
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                </span>
+                                <span class="text-xs font-medium text-slate-400">ID: ...${(item.userId || 'anon').slice(-6)}</span>
+                            </div>
+                            <span class="text-sm text-slate-500 dark:text-slate-400">${dateStr}</span>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-50 dark:bg-slate-900/50 p-4 rounded-xl border border-slate-100 dark:border-slate-700">
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                                    Liked Most
+                                </h4>
+                                <p class="text-sm text-slate-700 dark:text-slate-300 whitespace-pre-wrap">${item.liked || '<em class="text-slate-400">No comment provided</em>'}</p>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-slate-900/50 p-4 rounded-xl border border-slate-100 dark:border-slate-700">
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                                    Needs Improvement
+                                </h4>
+                                <p class="text-sm text-slate-700 dark:text-slate-300 whitespace-pre-wrap">${item.improvement || '<em class="text-slate-400">No comment provided</em>'}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                listEl.insertAdjacentHTML('beforeend', html);
+            });
+        };
+
+        const startListening = (user) => {
+            if (!user) return;
+
+            updateStatus("Connected live", "success");
+
+            if (isCanvasEnvironment) {
+                // Firestore implementation for preview
+                const appId = typeof __app_id !== 'undefined' ? __app_id : '3rd-agn-school';
+                const feedbackCollection = collection(db, 'artifacts', appId, 'public', 'data', 'feedback');
+                
+                onSnapshot(feedbackCollection, (snapshot) => {
+                    const data = [];
+                    snapshot.forEach((doc) => {
+                        const item = doc.data();
+                        // Handle serverTimestamp which might be briefly null initially
+                        const dateObj = item.timestamp ? item.timestamp.toDate() : new Date(); 
+                        data.push({ ...item, id: doc.id, parsedDate: dateObj });
+                    });
+                    renderData(data);
+                }, (error) => {
+                    console.error("Firestore Listen Error:", error);
+                    updateStatus("Disconnected", "error");
+                });
+
+            } else {
+                // Realtime DB implementation for exported file
+                const feedbackRef = ref(rtdb, 'feedback');
+                onValue(feedbackRef, (snapshot) => {
+                    const data = [];
+                    snapshot.forEach((childSnapshot) => {
+                        const item = childSnapshot.val();
+                        // Convert Date.now() timestamp to Date object
+                        const dateObj = item.timestamp ? new Date(item.timestamp) : new Date();
+                        data.push({ ...item, id: childSnapshot.key, parsedDate: dateObj });
+                    });
+                    renderData(data);
+                }, (error) => {
+                    console.error("RTDB Listen Error:", error);
+                    updateStatus("Disconnected", "error");
+                });
+            }
+        };
+
+        // Initialize App
+        initAuth();
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                startListening(user);
+            }
+        });
+
+    </script>
+</body>
+</html>
