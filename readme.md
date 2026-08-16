@@ -4,6 +4,7 @@ I'm an astrophysics student at the Guru Nanak Dev University working on understa
 
 - 🔭 Some astronomy and data analysis Python packages that I develop:
   - [galamo](https://www.galamo.org): an open source python package for galaxy analysis <img src="https://www.galamo.org/images/galamo_main.svg" height="50" align="right"/>
+    - [galamo](https://sunflaar.vercel.app): an open source python package for solar flare classification. <img src="https://www.galamo.org/images/galamo_main.svg" height="50" align="right"/>
   - [vdisp_fit](https://github.com/dingra11/vdisp_fit): A Python pipeline for estimating velocity desperison of AGN host galaxy developed in collaboration with IUCAA
   
     
